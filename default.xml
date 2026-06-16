@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Главный удаленный сервер — официальный Google AOSP -->
   <remote name="aosp" fetch="https://android.googlesource.com/" review="android-review.googlesource.com" />
   <remote name="github" fetch="https://github.com/" />
   
-  <!-- Твой профиль для кастомных форков -->
   <remote name="aether" fetch="https://github.com/LineXin/" />
 
-  <!-- Накатываем ветку Android 16. Google сейчас ведет разработку QPR в ветках android-16.0.0 -->
-  <!-- Для конкретного релиза QPR2 здесь позже прописывается точный тег (например, refs/tags/android-16.0.0_rX) -->
   <default revision="refs/heads/android-16.0.0" remote="aosp" sync-c="true" sync-j="4" />
 
-  <!-- Сюда будем дописывать твои кастомные репозитории, когда начнем форкать системные приложения -->
+  <project path="vendor/aether" name="LineXin/vendor_aether" remote="github" revision="main" />
 
 </manifest>
