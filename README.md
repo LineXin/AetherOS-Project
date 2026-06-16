@@ -11,3 +11,13 @@ repo init -u [https://github.com/LineXin/AetherOS-Project.git](https://github.co
 ```
 After that:
 ```repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags```
+# Building tiiime!!
+After sync, let's begin to build a ROM!
+Enter this on terminal:
+```bash
+. build/envsetup.sh
+lunch aether_[codename]-userdebug
+m aether
+```
+Now, your build will start!
+Thanks for your attention!
