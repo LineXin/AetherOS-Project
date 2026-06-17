@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Указываем удаленный репозиторий (твой GitHub) -->
+    <remote name="aether"
+            fetch="https://github.com/LineXin"
+            review="https://github.com/" />
+
+    <!-- Прописываем проект твоего вендора -->
+    <project name="vendor_aether_android" 
+             path="vendor/aether" 
+             remote="aether" 
+             revision="main" />
+
+</manifest>
