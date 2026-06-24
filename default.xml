@@ -284,7 +284,6 @@
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
 
-  <include name="snippets/lineage.xml" />
   <project path="vendor/aether" name="vendor_aether" remote="aether" revision="bka" />
 
 </manifest>
