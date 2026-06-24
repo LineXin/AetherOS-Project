@@ -8,6 +8,6 @@
 
   <default revision="refs/heads/android-16.0.0" remote="aosp" sync-c="true" sync-j="4" />
 
-  <project path="vendor/aether" name="vendor_aether" remote="aether" revision="main" />
+  <project path="vendor/aether" name="vendor_aether" remote="aether" revision="bka" />
 
 </manifest>
