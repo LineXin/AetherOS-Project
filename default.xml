@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="aosp" fetch="https://android.googlesource.com/" review="android-review.googlesource.com" />
-  <remote name="github" fetch="https://github.com/" />
-  
-  <remote name="aether" fetch="https://github.com/LineXin/" />
+  <remote name="generated"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-23.2" /> <remote name="aether"
+          fetch="https://github.com/LineXin" />
 
-  <default revision="refs/heads/android-16.0.0" remote="aosp" sync-c="true" sync-j="4" />
+  <include name="default.xml" remote="generated" />
 
   <project path="vendor/aether" name="vendor_aether" remote="aether" revision="bka" />
 
